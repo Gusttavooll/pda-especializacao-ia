@@ -1,0 +1,19 @@
+{
+  "name": "meu-mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server do Organizador de Atividades Online: uma tool somente leitura, ler_entrega.",
+  "scripts": {
+    "start": "node server.mjs",
+    "build": "node --check server.mjs && node --check ferramentas.mjs && node --check espiao.mjs && node --check tests/ferramentas.test.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.1.0",
+    "zod": "^4.2.0"
+  }
+}
